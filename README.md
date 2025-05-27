@@ -1,1 +1,101 @@
-# Bacterial-persistence-modulate-resistance
+# Antibiotic Resistance Evolution Analysis Scripts
+
+This repository contains the  analysis scripts used to generate all figures and analyses for the manuscript. * The full data set for figure generation is deposited elsewhere. (Link added upon publication )
+
+## Repository Structure
+
+```
+Nat_com_script/
+├── Fig_1/                   # Survival analysis and population dynamics
+│   ├── Fig_1_a-b.py         # Mathematical survival models
+│   └── Fig_1_c-d-e.py       # Simple simulations
+├── Fig_2/                   # Probability of emergence analysis
+│   └── Fig_2.py             # Contour plot generation
+├── Fig_3_a-b/               # MIC evolution simulations
+│   ├── Fig_3_a/             # R-based simulation analysis
+│   ├── Fig_3_b/             # Python visualization
+│   └── Simulation_generating_script/  # Example simulation script
+├── Fig_4_a-b/               # Distribution analysis
+│   └── Fig_4_a-b.R          # Density plots and bar charts
+├── Fig_5/                   # Mutation analysis
+│   ├── num_mut_correct/     # Mutation counting analysis
+│   └── Fig_5_c/             # Gene ontology analysis and functional
+├── Fig_6/                   # Large-scale evolutionary simulations
+│   ├── Fig_6_a-b/           # Heatmap visualizations
+│   ├── Fig_6_c/             # MIC and extinction analysis
+│   └── Fig_6_d/             # Population size effects
+├── S1_figure/               # Supplementary experimental data
+├── S2_figure/               # Supplementary frequency analysis
+├── S3_figure/               # Supplementary probability analysis
+└── complete_data/           # * The full datasheet is deposited elsewhere
+```
+
+## Script Types and Languages
+
+### Python Scripts (`.py`)
+- **Mathematical modeling**: Survival functions, probability calculations
+- **Stochastic simulations**: Tau-leaping population dynamics
+- **Data processing**: Mutation analysis, frequency calculations
+- **Visualization**: Matplotlib/Seaborn-based plotting
+- **Dependencies**: `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`
+
+### R Scripts (`.R`)
+- **Statistical analysis**: Distribution fitting, density plots
+- **Advanced visualization**: ggplot2-based publication-quality figures
+- **Data manipulation**: dplyr/tidyr workflows
+- **Dependencies**: `dplyr`, `tidyr`, `ggplot2`, `readxl`, `cowplot`
+
+## Quick Start
+
+### Self-Sufficient Figures (Fast Generation)
+The first two figures can be generated quickly without external data:
+
+```bash
+# Figure 1: Survival analysis and simulations (1-2 minutes)
+cd Nat_com_script/Fig_1
+python Fig_1_a-b.py      # Mathematical models
+python Fig_1_c-d-e.py    # Population simulations
+
+# Figure 2: Probability of emergence (1-2 minutes)
+cd ../Fig_2
+python Fig_2.py          # Contour analysis
+```
+
+These scripts are completely self-contained and will generate both the analysis and output figures.
+
+## Data Requirements
+
+### For Complete Analysis
+Most figures require experimental or simulation data. The expected data format is an Excel file (`complete_data.xlsx`) with specific sheet names corresponding to each figure.
+
+### Data Placement
+1. **Drop data file**: Place `complete_data.xlsx` in the `complete_data/` folder
+2. **Automatic detection**: Scripts will automatically locate and read the appropriate data sheets
+3. **Sheet mapping**: Each script reads from its corresponding sheet (e.g., `Fig_3_b.py` reads from `Fig_3_b` sheet)
+
+### Data Availability
+The complete dataset will be deposited in a public data repository upon publication. The data includes:
+- Experimental evolution results
+- Large-scale simulation outputs  
+- Mutation frequency measurements
+- Survival fraction data
+
+
+## System Requirements
+
+### Python Environment
+- Python 3.7+
+- Required packages: `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`
+- Optional: `goatools` (for gene ontology analysis in Fig_5_c)
+
+### R Environment  
+- R 4.0+
+- Required packages: `dplyr`, `tidyr`, `ggplot2`, `readxl`, `cowplot`
+
+## Citation
+
+If you use these scripts in your research, please cite the original manuscript:
+
+[Citation information will be added upon publication]
+
+
