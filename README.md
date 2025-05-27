@@ -11,8 +11,7 @@ Nat_com_script/
 │   └── Fig_2.py             # Contour plot generation
 ├── Fig_3_a-b/               # MIC evolution simulations
 │   ├── Fig_3_a/             # R-based simulation analysis
-│   ├── Fig_3_b/             # Python visualization
-│   └── Simulation_generating_script/  # Example simulation script
+│   └── Fig_3_b/             # Python visualization
 ├── Fig_4_a-b/               # Distribution analysis
 │   └── Fig_4_a-b.R          # Density plots and bar charts
 ├── Fig_5/                   # Mutation analysis
@@ -27,6 +26,7 @@ Nat_com_script/
 ├── S3_figure/               # Supplementary probability analysis
 └── complete_data/           # * The full datasheet is deposited elsewhere
 ```
+
 
 ## Script Types and Languages
 
