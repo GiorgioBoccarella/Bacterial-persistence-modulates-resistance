@@ -1,5 +1,3 @@
-# Antibiotic Resistance Evolution Analysis Scripts
-
 This repository contains the  analysis scripts used to generate all figures and analyses for the manuscript. * The full data set for figure generation is deposited elsewhere. (Link added upon publication )
 
 ## Repository Structure
