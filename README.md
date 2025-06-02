@@ -9,13 +9,15 @@ Nat_com_script/
 │   └── Fig_1_c-d-e.py       # Simple simulations
 ├── Fig_2/                   # Probability of emergence analysis
 │   └── Fig_2.py             # Contour plot generation
-├── Fig_3_a-b/               # MIC evolution simulations
+├── Fig_3/                   # MIC evolution simulations
 │   ├── Fig_3_a/             # R-based simulation analysis
 │   └── Fig_3_b/             # Python visualization
-├── Fig_4_a-b/               # Distribution analysis
+├── Fig_4/                   # Distribution analysis
 │   └── Fig_4_a-b.R          # Density plots and bar charts
 ├── Fig_5/                   # Mutation analysis
-│   ├── num_mut_correct/     # Mutation counting analysis
+│   ├── Fig_5_a-b/           # Mutation counting analysis
+│   │   ├── Fig_5_a/         # Simulation data (sim)
+│   │   └── Fig_5_b/         # Empirical data (emp)
 │   └── Fig_5_c/             # Gene ontology analysis and functional
 ├── Fig_6/                   # Large-scale evolutionary simulations
 │   ├── Fig_6_a-b/           # Heatmap visualizations
